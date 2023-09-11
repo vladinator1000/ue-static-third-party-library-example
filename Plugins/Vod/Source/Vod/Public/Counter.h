@@ -3,17 +3,21 @@
 
 #include <variant>
 
-namespace counter {
-
+namespace counter
+{
 	struct model
 	{
 		int value = 0;
 	};
 
 	struct increment_action
-	{};
+	{
+	};
+
 	struct decrement_action
-	{};
+	{
+	};
+
 	struct reset_action
 	{
 		int new_value = 0;
@@ -24,13 +28,12 @@ namespace counter {
 	inline model update(model c, action action)
 	{
 		return std::visit(lager::visitor{
-							  [&](increment_action) { return model{c.value + 1}; },
-							  [&](decrement_action) { return model{c.value - 1}; },
-							  [&](reset_action a) { return model{a.new_value}; },
-						  },
-						  action);
+			                  [&](increment_action) { return model{c.value + 1}; },
+			                  [&](decrement_action) { return model{c.value - 1}; },
+			                  [&](reset_action a) { return model{a.new_value}; },
+		                  },
+		                  action);
 	}
-
 } // namespace counter
 
 LAGER_STRUCT(counter, model, value);
