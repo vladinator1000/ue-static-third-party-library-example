@@ -9,6 +9,12 @@ public class Lager : ModuleRules
 	{
 		Type = ModuleType.External;
 
-		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "include"));
+		PublicSystemIncludePaths.Add(Path.Combine(ModuleDirectory, "include"));
+
+		PublicDependencyModuleNames.AddRange(
+			new string[]
+			{
+				"Zug"
+			});
 	}
 }
