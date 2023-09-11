@@ -3,12 +3,12 @@
 using System.IO;
 using UnrealBuildTool;
 
-public class Zug : ModuleRules
+public class Lager : ModuleRules
 {
-	public Zug(ReadOnlyTargetRules Target) : base(Target)
+	public Lager(ReadOnlyTargetRules Target) : base(Target)
 	{
 		Type = ModuleType.External;
 
-		PublicSystemIncludePaths.Add(Path.Combine(ModuleDirectory, "zug"));
+		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "include"));
 	}
 }

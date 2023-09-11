@@ -17,7 +17,7 @@ public class Vod : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				"lager",
+				
 			}
 			);
 			
@@ -26,7 +26,8 @@ public class Vod : ModuleRules
 			new string[]
 			{
 				"Core",
-				"Projects"
+				"Projects",
+				"Lager"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -35,7 +36,6 @@ public class Vod : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"lager", "zug"
 			}
 			);
 		
