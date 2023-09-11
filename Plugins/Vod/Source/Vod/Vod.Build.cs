@@ -35,7 +35,7 @@ public class Vod : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Lager"
+				"lager", "zug"
 			}
 			);
 		

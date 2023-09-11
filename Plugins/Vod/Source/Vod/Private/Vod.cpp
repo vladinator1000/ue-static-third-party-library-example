@@ -3,7 +3,7 @@
 #include "Vod.h"
 #include "Core.h"
 #include "Modules/ModuleManager.h"
-#include <util.hpp>
+#include <lager/util.hpp>
 
 void FVodModule::StartupModule()
 {
