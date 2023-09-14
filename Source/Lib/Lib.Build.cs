@@ -7,6 +7,8 @@ public class Lib : ModuleRules
 	public Lib(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		bEnableUndefinedIdentifierWarnings = false;
+		bUseRTTI = true;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 

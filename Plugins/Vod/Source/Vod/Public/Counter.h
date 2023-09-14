@@ -1,7 +1,9 @@
-﻿#include <lager/extra/struct.hpp>
+﻿THIRD_PARTY_INCLUDES_START
+#include <lager/extra/struct.hpp>
 #include <lager/util.hpp>
 
 #include <variant>
+THIRD_PARTY_INCLUDES_END
 
 namespace counter
 {

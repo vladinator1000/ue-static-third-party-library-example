@@ -7,6 +7,8 @@ public class Vod : ModuleRules
 	public Vod(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		// bEnableUndefinedIdentifierWarnings = false;
+		bUseRTTI = true;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {

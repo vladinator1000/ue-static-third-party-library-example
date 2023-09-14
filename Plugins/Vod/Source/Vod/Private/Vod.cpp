@@ -4,8 +4,11 @@
 #include "Core.h"
 #include "Modules/ModuleManager.h"
 #include "Counter.h"
+
+THIRD_PARTY_INCLUDES_START
 #include <lager/event_loop/manual.hpp>
 #include <lager/store.hpp>
+THIRD_PARTY_INCLUDES_END
 
 void FVodModule::StartupModule()
 {
