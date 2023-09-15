@@ -1,9 +1,11 @@
 ﻿THIRD_PARTY_INCLUDES_START
+#include "UndefineMacros_UE_4.17.h"
 #include <lager/extra/struct.hpp>
 #include <lager/util.hpp>
+#include "RedefineMacros_UE_4.17.h"
+THIRD_PARTY_INCLUDES_END
 
 #include <variant>
-THIRD_PARTY_INCLUDES_END
 
 namespace counter
 {
@@ -39,6 +41,6 @@ namespace counter
 } // namespace counter
 
 LAGER_STRUCT(counter, model, value);
-LAGER_STRUCT(counter, increment_action);
+LAGER_STRUCT(counter, increment_action);	
 LAGER_STRUCT(counter, decrement_action);
 LAGER_STRUCT(counter, reset_action, new_value);
